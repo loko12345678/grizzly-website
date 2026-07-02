@@ -24,7 +24,7 @@ if (estimateForm) {
       (photoCount > 0 ? `Photos selected: ${photoCount}. Please attach them to this email before sending.\n` : '')
     );
 
-    window.location.href = `mailto:jacob@grizzlygeneralcontracting.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:estimates@grizzlygeneralcontracting.com?subject=${subject}&body=${body}`;
 
     formStatus.textContent = 'Your email app should open with the request filled out. Send it to complete your estimate request. We will follow up within one business day.';
   });
