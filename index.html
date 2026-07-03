@@ -3,139 +3,331 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grizzly General Contracting | Home Remodeling & Building Experts</title>
-  <meta name="description" content="Grizzly General Contracting provides premium remodeling, additions, kitchens, bathrooms, decks, roofing, siding, windows, doors, and basement finishing in Garnet Valley, Glen Mills, Chadds Ford, West Chester, Broomall, Newtown Square, Media, Wayne, Villanova, Malvern and surrounding areas." />
-  <link rel="icon" href="assets/images/paw-house-logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Grizzly General Contracting | Premium Remodeling & Construction</title>
+  <meta name="description" content="Grizzly General Contracting provides kitchen remodeling, bathroom remodeling, additions, exterior remodeling, and decks across Southeastern Pennsylvania with quality craftsmanship and clear communication." />
+  <link rel="icon" href="images/paw-logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Grizzly General Contracting home">
-      <img src="assets/images/paw-house-logo.png" alt="Grizzly General Contracting paw and house logo" />
-      <span>
-        <strong>GRIZZLY</strong>
-        <small>General Contracting, LLC</small>
-      </span>
-    </a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="#top">Home</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About Us</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#areas">Service Areas</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header" id="top">
+    <div class="top-strip">
+      <div class="container top-strip__inner">
+        <a href="tel:16103249138">☎ (610) 324-9138</a>
+        <a href="mailto:estimates@grizzlygeneralcontracting.com">✉ estimates@grizzlygeneralcontracting.com</a>
+      </div>
+    </div>
 
-    <a class="phone" href="tel:16103249138">
-      <span class="phone-icon">☎</span>
-      <span><small>Call or Text</small><strong>(610) 324-9138</strong></span>
-    </a>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Grizzly General Contracting home">
+        <img src="images/paw-logo.png" alt="Grizzly General Contracting paw logo" />
+        <span><strong>GRIZZLY</strong><small>General Contracting</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#galleries">Gallery</a>
+        <a href="#service-areas">Service Areas</a>
+        <a href="#estimate">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="#estimate">Request an Estimate</a>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Premium Home Remodeling</p>
-        <h1>Home Remodeling <span>&amp; Building Experts</span></h1>
-        <div class="underline"></div>
-        <p class="lead">High-end craftsmanship. Honest service. Built to last. We transform houses into beautiful, functional homes.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">▣ Request My Free Estimate</a>
-          <a class="btn btn-secondary" href="#projects">▷ View Our Work</a>
+  <main id="main">
+    <section class="hero" aria-label="Grizzly General Contracting homepage hero">
+      <div class="hero__background" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Where Quality Craftsmanship Meets Exceptional Service.</p>
+          <h1>Transforming Houses Into Dream Homes</h1>
+          <p class="lead">Kitchens, bathrooms, additions, exterior remodeling, and decks completed with pride, clear communication, and lasting craftsmanship.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#estimate">Request an Estimate</a>
+            <a class="btn btn--outline" href="#galleries">View Our Work</a>
+          </div>
+          <div class="hero-proof" aria-label="Trust highlights">
+            <span>Licensed &amp; Insured</span>
+            <span>Local &amp; Trusted</span>
+          </div>
+        </div>
+
+        <aside class="estimate-card hero-form" id="estimate" aria-label="Estimate request form">
+          <h2>Request an Estimate</h2>
+          <p>Let's bring your vision to life. Tell us about your project and we'll be in touch with a detailed estimate.</p>
+          <div class="form-success" id="form-success">Thanks — your request was sent. We’ll be in touch soon.</div>
+<div class="form-error" id="form-error">Something went wrong. Please call or email us and we’ll get you taken care of.</div>
+<form class="estimate-form" id="estimate-form" action="https://formsubmit.co/ajax/estimates@grizzlygeneralcontracting.com" method="POST">
+            <input type="hidden" name="_subject" value="New Estimate Request - Grizzly General Contracting">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input name="name" type="text" placeholder="Full Name" required />
+            <input name="phone" type="tel" placeholder="Phone Number" required />
+            <input name="email" type="email" placeholder="Email Address" required />
+            <select name="service" required>
+              <option value="">Service Needed</option>
+              <option>Kitchens</option>
+              <option>Bathrooms</option>
+              <option>Additions</option>
+              <option>Exterior</option>
+              <option>Decks</option>
+              <option>Other</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+            <button class="btn btn--gold" type="submit">Send Request</button>
+            <small>🔒 We respect your privacy.</small>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Our Work Speaks for Itself</p>
+          <h2>Featured Services</h2>
+          <p>Five focused categories. Clean work. Strong communication. Results that feel built to last.</p>
+        </div>
+        <div class="service-grid">
+          <a class="service-card" href="#kitchens-gallery" style="--bg:url('../images/kitchens.jpg')"><span>Kitchens</span></a>
+          <a class="service-card" href="#bathrooms-gallery" style="--bg:url('../images/bathrooms.jpg')"><span>Bathrooms</span></a>
+          <a class="service-card" href="#additions-gallery" style="--bg:url('../images/additions.jpg')"><span>Additions</span></a>
+          <a class="service-card" href="#exterior-gallery" style="--bg:url('../images/exterior.jpg')"><span>Exterior</span></a>
+          <a class="service-card" href="#decks-gallery" style="--bg:url('../images/decks.jpg')"><span>Decks</span></a>
         </div>
       </div>
-
-      <aside class="estimate" id="contact">
-        <h2>Start Your <span>Project</span></h2>
-        <p>Let's bring your vision to life. Tell us about your project, and we'll provide expert guidance and a detailed estimate.</p>
-        <form id="estimateForm">
-          <input name="name" placeholder="Full Name" required />
-          <input name="phone" placeholder="Phone Number" required />
-          <input name="email" type="email" placeholder="Email Address" required />
-          <input name="address" placeholder="Project Address / Town" />
-          <select name="service" aria-label="Project Type" required>
-            <option value="">Project Type</option>
-            <option>Kitchen Remodeling</option>
-            <option>Bathroom Remodeling</option>
-            <option>Decks & Outdoor Living</option>
-            <option>Home Additions</option>
-            <option>Roofing</option>
-            <option>Siding</option>
-            <option>Windows & Doors</option>
-            <option>Basement Finishing</option>
-            <option>Other</option>
-          </select>
-          <select name="timeline" aria-label="Desired Timeline">
-            <option value="">Desired Timeline</option>
-            <option>ASAP</option>
-            <option>1 - 3 Months</option>
-            <option>3 - 6 Months</option>
-            <option>Just Planning</option>
-          </select>
-          <textarea name="message" placeholder="Tell us about your project"></textarea>
-          <label class="file-upload">Optional Photos
-            <input name="photos" type="file" accept="image/*" multiple />
-          </label>
-          <button type="submit">Request My Free Estimate <span>→</span></button>
-          <small>Requests open an email to estimates@grizzlygeneralcontracting.com. Photos may need to be attached manually.</small>
-          <div id="formStatus" class="form-status" aria-live="polite"></div>
-        </form>
-      </aside>
     </section>
 
-    <section class="services" id="services">
-      <a href="#contact"><i>▦</i><span>Kitchen<br>Remodeling</span></a>
-      <a href="#contact"><i>▱</i><span>Bathroom<br>Remodeling</span></a>
-      <a href="#contact"><i>▥</i><span>Decks &<br>Outdoor Living</span></a>
-      <a href="#contact"><i>⌂</i><span>Home<br>Additions</span></a>
-      <a href="#contact"><i>⌃</i><span>Roofing</span></a>
-      <a href="#contact"><i>▤</i><span>Siding</span></a>
-      <a href="#contact"><i>▣</i><span>Windows<br>& Doors</span></a>
-      <a href="#contact"><i>↧</i><span>Basement<br>Finishing</span></a>
-    </section>
-
-    <section class="areas-strip" id="areas">
-      <h2>Proudly Serving the Region's Most Sought-After Communities</h2>
-      <div class="towns">
-        <span>Garnet Valley</span><span>Glen Mills</span><span>Chadds Ford</span><span>West Chester</span><span>Broomall</span><span>Newtown Square</span><span>Media</span><span>Wayne</span><span>Villanova</span><span>Malvern</span>
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div>
+          <p class="section-kicker">About Grizzly</p>
+          <h2>Built on Hard Work. Focused on You.</h2>
+          <p>Grizzly General Contracting is a local, family-owned business serving homeowners throughout Southeastern Pennsylvania. We take pride in our craftsmanship, communicate clearly, and treat every home like it is our own.</p>
+          <div class="value-row" aria-label="Company values">
+            <div><span>🛡</span><strong>Licensed &amp; Insured</strong></div>
+            <div><span>👥</span><strong>Family Owned</strong></div>
+            <div><span>🤝</span><strong>Honest Communication</strong></div>
+            <div><span>★</span><strong>Quality Craftsmanship</strong></div>
+          </div>
+        </div>
+        <img class="about-photo" src="images/about-exterior.jpg" alt="Exterior remodeling and deck project" />
       </div>
     </section>
 
-    <section class="trust" id="reviews">
-      <div><b>🛡</b><strong>Fully Licensed<br>& Insured</strong></div>
-      <div><b>✹</b><strong>High Quality<br>Materials</strong><small>Built to Last</small></div>
-      <div><b>👥</b><strong>Local & Family<br>Owned</strong><small>Serving the Region</small></div>
-      <div><b>🤝</b><strong>Honest Pricing<br>No Surprises</strong><small>Transparent & Fair</small></div>
-      <div><b class="stars">5.0 ★★★★★</b><strong>Based on Google Reviews</strong></div>
+    <section class="section service-areas" id="service-areas">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Service Areas</p>
+          <h2>Serving Homeowners Across Southeastern Pennsylvania</h2>
+          <p>Quality remodeling and construction services for homeowners throughout Delaware County, Chester County, the Main Line, and surrounding communities.</p>
+        </div>
+        <div class="area-list" aria-label="Featured service areas">
+          <span>Garnet Valley</span>
+          <span>Glen Mills</span>
+          <span>Chadds Ford</span>
+          <span>West Chester</span>
+          <span>Broomall</span>
+          <span>Newtown Square</span>
+          <span>Media</span>
+          <span>Wayne</span>
+          <span>Villanova</span>
+          <span>Malvern</span>
+        </div>
+      </div>
     </section>
 
-    <section class="content" id="about">
-      <p class="eyebrow green">Built for homeowners who want it done right</p>
-      <h2>Premium remodeling without the runaround.</h2>
-      <p>Grizzly General Contracting, LLC handles kitchens, bathrooms, additions, decks, roofing, siding, windows, doors, and basement finishing with clean communication, honest pricing, and craftsmanship that holds up.</p>
+    <section class="section galleries" id="galleries">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Project Galleries</p>
+          <h2>Browse by Service</h2>
+          <p>Simple galleries for the main work Grizzly offers. Real Grizzly project photos organized by service category.</p>
+        </div>
+
+        <div class="gallery-stack">
+
+          <article class="gallery-block" id="kitchens-gallery">
+            <div class="gallery-block__header">
+              <div>
+                <p class="mini-kicker">Kitchen Remodeling</p>
+                <h3>Kitchens</h3>
+                <p>Custom kitchen remodels, cabinetry, countertops, flooring, lighting, and full first-floor transformations.</p>
+              </div>
+              <a class="text-link" href="#estimate">Start a Kitchen Project →</a>
+            </div>
+            <div class="photo-grid real-gallery">
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-01.jpg" alt="Kitchens project photo 1" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-02.jpg" alt="Kitchens project photo 2" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-03.jpg" alt="Kitchens project photo 3" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-04.jpg" alt="Kitchens project photo 4" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-05.jpg" alt="Kitchens project photo 5" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-06.jpg" alt="Kitchens project photo 6" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-07.jpg" alt="Kitchens project photo 7" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-08.jpg" alt="Kitchens project photo 8" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-09.jpg" alt="Kitchens project photo 9" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/kitchens/kitchens-10.jpg" alt="Kitchens project photo 10" loading="lazy" /></button>
+            </div>
+          </article>
+
+          <article class="gallery-block" id="bathrooms-gallery">
+            <div class="gallery-block__header">
+              <div>
+                <p class="mini-kicker">Bathroom Remodeling</p>
+                <h3>Bathrooms</h3>
+                <p>Tile, tubs, showers, vanities, fixtures, flooring, and clean finished details.</p>
+              </div>
+              <a class="text-link" href="#estimate">Start a Bathroom Project →</a>
+            </div>
+            <div class="photo-grid real-gallery">
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-01.jpg" alt="Bathrooms project photo 1" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-02.jpg" alt="Bathrooms project photo 2" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-03.jpg" alt="Bathrooms project photo 3" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-04.jpg" alt="Bathrooms project photo 4" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-05.jpg" alt="Bathrooms project photo 5" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-06.jpg" alt="Bathrooms project photo 6" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-07.jpg" alt="Bathrooms project photo 7" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-08.jpg" alt="Bathrooms project photo 8" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-09.jpg" alt="Bathrooms project photo 9" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/bathrooms/bathrooms-10.jpg" alt="Bathrooms project photo 10" loading="lazy" /></button>
+            </div>
+          </article>
+
+          <article class="gallery-block" id="additions-gallery">
+            <div class="gallery-block__header">
+              <div>
+                <p class="mini-kicker">Home Additions</p>
+                <h3>Additions</h3>
+                <p>Added living space, framing, structural tie-ins, exterior work, and full project coordination.</p>
+              </div>
+              <a class="text-link" href="#estimate">Plan an Addition →</a>
+            </div>
+            <div class="photo-grid real-gallery">
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-01.jpg" alt="Additions project photo 1" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-02.jpg" alt="Additions project photo 2" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-03.jpg" alt="Additions project photo 3" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-04.jpg" alt="Additions project photo 4" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-05.jpg" alt="Additions project photo 5" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-06.jpg" alt="Additions project photo 6" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-07.jpg" alt="Additions project photo 7" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-08.jpg" alt="Additions project photo 8" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-09.jpg" alt="Additions project photo 9" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/additions/additions-10.jpg" alt="Additions project photo 10" loading="lazy" /></button>
+            </div>
+          </article>
+
+          <article class="gallery-block" id="exterior-gallery">
+            <div class="gallery-block__header">
+              <div>
+                <p class="mini-kicker">Exterior Remodeling</p>
+                <h3>Exterior</h3>
+                <p>Roofing, siding, windows, doors, trim, exterior repairs, and curb appeal upgrades.</p>
+              </div>
+              <a class="text-link" href="#estimate">Start an Exterior Project →</a>
+            </div>
+            <div class="photo-grid real-gallery">
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-01.jpg" alt="Exterior project photo 1" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-02.jpg" alt="Exterior project photo 2" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-03.jpg" alt="Exterior project photo 3" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-04.jpg" alt="Exterior project photo 4" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-05.jpg" alt="Exterior project photo 5" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-06.jpg" alt="Exterior project photo 6" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-07.jpg" alt="Exterior project photo 7" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-08.jpg" alt="Exterior project photo 8" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-09.jpg" alt="Exterior project photo 9" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/exterior/exterior-10.jpg" alt="Exterior project photo 10" loading="lazy" /></button>
+            </div>
+          </article>
+
+          <article class="gallery-block" id="decks-gallery">
+            <div class="gallery-block__header">
+              <div>
+                <p class="mini-kicker">Decks & Outdoor Living</p>
+                <h3>Decks</h3>
+                <p>Deck builds, resurfacing, railings, stairs, covered areas, and outdoor living spaces.</p>
+              </div>
+              <a class="text-link" href="#estimate">Build a Deck →</a>
+            </div>
+            <div class="photo-grid real-gallery">
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-01.jpg" alt="Decks project photo 1" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-02.jpg" alt="Decks project photo 2" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-03.jpg" alt="Decks project photo 3" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-04.jpg" alt="Decks project photo 4" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-05.jpg" alt="Decks project photo 5" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-06.jpg" alt="Decks project photo 6" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-07.jpg" alt="Decks project photo 7" loading="lazy" /></button>
+              <button class="gallery-thumb" type="button"><img src="images/decks/decks-08.jpg" alt="Decks project photo 8" loading="lazy" /></button>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="projects" id="projects">
-      <p class="eyebrow green">Featured Projects</p>
-      <h2>Your project gallery goes here.</h2>
-      <div class="cards">
-        <article><span>Kitchen Remodel</span></article>
-        <article><span>Bathroom Remodel</span></article>
-        <article><span>Deck Build</span></article>
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Why Homeowners Choose Grizzly</p>
+          <h2>Built Better From the First Conversation</h2>
+        </div>
+        <div class="why-grid">
+          <div><span>🏆</span><h3>Quality Craftsmanship</h3><p>Premium materials and proven techniques for lasting results.</p></div>
+          <div><span>💬</span><h3>Honest Communication</h3><p>Clear updates, straight answers, and no guessing games.</p></div>
+          <div><span>📋</span><h3>Detailed Estimates</h3><p>We explain the scope so you understand what you are paying for.</p></div>
+          <div><span>🔍</span><h3>Attention to Detail</h3><p>We care about the small things because they make the finished job.</p></div>
+          <div><span>✅</span><h3>Free Estimates</h3><p>Expert advice and a clear plan for your project.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2>Ready to Start Your Project?</h2>
+          <p>Tell us what you are planning and we will help you take the next step.</p>
+        </div>
+        <a class="btn btn--gold" href="#estimate">Request an Estimate</a>
       </div>
     </section>
   </main>
 
-  <a class="mobile-call" href="tel:16103249138">Call or Text (610) 324-9138</a>
-
-  <footer>
-    <img src="assets/images/grizzly-full-logo.png" alt="Grizzly General Contracting full logo" />
-    <p>© <span id="year"></span> Grizzly General Contracting, LLC</p>
-    <p><a href="tel:16103249138">(610) 324-9138</a> · <a href="mailto:estimates@grizzlygeneralcontracting.com">estimates@grizzlygeneralcontracting.com</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="images/grizzly-full-logo.png" alt="Grizzly General Contracting logo" />
+        <p>Building better homes with quality craftsmanship, honest communication, and lasting results.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#galleries">Gallery</a>
+        <a href="#estimate">Contact</a>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <a href="#kitchens-gallery">Kitchens</a>
+        <a href="#bathrooms-gallery">Bathrooms</a>
+        <a href="#additions-gallery">Additions</a>
+        <a href="#exterior-gallery">Exterior</a>
+        <a href="#decks-gallery">Decks</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="tel:16103249138">(610) 324-9138</a>
+        <a href="mailto:estimates@grizzlygeneralcontracting.com">estimates@grizzlygeneralcontracting.com</a>
+        <p>Delaware County • Chester County • Main Line • Surrounding Areas</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Grizzly General Contracting, LLC. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
